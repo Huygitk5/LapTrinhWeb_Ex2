@@ -15,7 +15,7 @@ RUN mvn clean package -DskipTests
 
 # GIAI ĐOẠN 2: RUNTIME (Chạy ứng dụng bằng Tomcat)
 # Sử dụng Tomcat 9 với JDK 17
-FROM tomcat:9.0.85-jdk17-corretto
+FROM tomcat:11.0.0-M20-jdk17-temurin
 
 # Xóa các ứng dụng mặc định của Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
